@@ -198,11 +198,4 @@ A `LICENSE` file with the full CC-BY-4.0 text is recommended for the repository 
 - Figures in the paper were produced by the Python scripts in `AIAA.zip` (`build_figures.py`, `build_hero.py`).
 - The Ansys cases require Workbench 2022 R2 or 2023 R1 (or compatible) and an academic or commercial Fluent + Mechanical licence.
 
----
 
-## Contact
-
-**Md Nur-A-Adam Dony** — Tennessee Technological University, Cookeville, TN
-✉ <mdony42@tntech.edu>
-
-Issues and questions: please open a [GitHub issue](https://github.com/AdamDony/quadplane-px4-flight-data/issues) on this repository.
