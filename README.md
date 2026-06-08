@@ -1,6 +1,6 @@
 # Quadplane VTOL — Flight-Test Telemetry & CFD Data
 
-Companion data and analysis files for the AIAA SciTech Forum 2027 paper:
+
 
 > **Flight-Test Characterization and Design Implications of Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft**
 > Md Azizul Islam, Anika Tasneem, S. G. M. Hossain, Md Nur-A-Adam Dony
@@ -150,33 +150,7 @@ The wing uses a low-Re S1223 cambered section.
 
 ---
 
-## 7. Paper source
 
-| File | Contents |
-|---|---|
-| `AIAA.zip` | LaTeX source, compiled PDF, figures, figure-generation scripts |
-| `ReadMe.docx` | Earlier project-notes file (kept for historical reference; this `README.md` supersedes it) |
-
----
-
-## How to cite
-
-If you use these data or build on the analysis, please cite the paper:
-
-```bibtex
-@inproceedings{islam2027quadplane,
-  author    = {Islam, Md Azizul and Tasneem, Anika and Hossain, S. G. M. and Dony, Md Nur-A-Adam},
-  title     = {Flight-Test Characterization and Design Implications of Hover-to-Forward-Flight Transition for a Small Quadplane {VTOL} Aircraft},
-  booktitle = {AIAA SciTech Forum 2027},
-  number    = {AIAA Paper 2027-XXXX},
-  address   = {Orlando, FL},
-  month     = jan,
-  year      = {2027},
-  note      = {Companion data: \url{https://github.com/AdamDony/quadplane-px4-flight-data}}
-}
-```
-
-*(Replace `2027-XXXX` with the assigned AIAA paper number once available, and add the DOI when the proceedings are published.)*
 
 ---
 
