@@ -1,18 +1,44 @@
+
 # Quadplane VTOL — Flight-Test Telemetry & CFD Data
 
-
-
 > **Flight-Test Characterization and Design Implications of Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft**
-> Md Azizul Islam, S. G. M. Hossain, Md Nur-A-Adam Dony
-
+>
+> Md Azizul Islam¹, Md Nur-A-Adam Dony¹\*, S. G. M. Hossain¹
+> ¹These authors contributed equally to this work.
+> \*Corresponding author — `mdony42@tntech.edu`
 
 This repository hosts the raw PX4 telemetry, derived CSV topic exports, Ansys Fluent CFD project files, structural FEA results, S1223 airfoil reference data, and the SolidWorks/AutoCAD geometry used in the paper.
 
 ---
 
+## Citation
+
+If you use any of the data, figures, or analysis from this repository, please cite the journal paper:
+
+> Md Azizul Islam, Md Nur-A-Adam Dony, and S. G. M. Hossain,
+> "Flight-Test Characterization and Design Implications of Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft,"
+> *Aerospace Science and Technology*, 2026 (under review).
+
+BibTeX:
+
+```bibtex
+@article{IslamDonyHossain2026Quadplane,
+  author  = {Islam, Md Azizul and Dony, Md Nur-A-Adam and Hossain, S. G. M.},
+  title   = {{Flight-Test Characterization and Design Implications of
+             Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft}},
+  journal = {Aerospace Science and Technology},
+  year    = {2026},
+  note    = {Under review}
+}
+```
+
+The volume, pages, and DOI fields will be added once the paper is accepted; the citation should be updated accordingly.
+
+---
+
 ## Quick map
 
-| Folder of files | What it contains |
+| Folder / files | What it contains |
 |---|---|
 | `*.csv` | 15 PX4 telemetry topics extracted from the binary `sdlog2` log |
 | `AnsysSimu*.JPG`, `AnsysContour/Streamline/Vector/Particles*.JPG`, `Wing2D*.JPG` | 2D Fluent results — pressure contours, streamlines, residuals |
@@ -22,7 +48,7 @@ This repository hosts the raw PX4 telemetry, derived CSV topic exports, Ansys Fl
 | `Deform*Pa.JPG`, `*ElasticStrain*.JPG`, `*ElasticStress*.JPG`, `FEAWing_files.zip` | Wing structural FEA |
 | `S1223*.xlsx`, `S1223*.docx` | S1223 airfoil coordinates and scripts at various chord scalings |
 | `Arm.SLDPRT`, `Drawing1.dwg`, `Drawing1-Model.pdf` | CAD: wing/arm geometry and assembly drawing |
-| `AIAA.zip` | Paper source bundle (LaTeX + figures + scripts) |
+| `AIAA.zip` | Paper source bundle (LaTeX + figures + scripts) — filename is historical; the contents underpin both the journal manuscript and the conference companion |
 
 ---
 
@@ -65,7 +91,7 @@ A 2D angle-of-attack sweep on the wing airfoil was performed in Ansys Fluent (20
 | `GustedWind.wbpj` | Gust-perturbation cases at $\alpha = +15°$ |
 | `FEAWing_files.zip` | Structural FEA Workbench archive |
 
-**Pressure-field exports per AoA** (Section IV.A of the paper):
+**Pressure-field exports per AoA** (Section 7.1 of the paper, *Multi-angle pressure field*):
 
 | Image | Angle of attack |
 |---|---|
@@ -93,14 +119,14 @@ A 2D angle-of-attack sweep on the wing airfoil was performed in Ansys Fluent (20
 
 ## 3. Gust-perturbation cases
 
-Files named `15AoA{S}Gusted{G}MS{Lift|Drag}.jpg` record integrated lift or drag time-histories at base $\alpha = +15°$ with secondary parameter `S` (45 or 60, see below) and gust magnitude `G` ∈ {2, 4, 6, 8} m/s:
+Files named `15AoA{S}Gusted{G}MS{Lift|Drag}.jpg` record integrated lift or drag time-histories at base $\alpha = +15°$ with secondary parameter `S` (45 or 60) and gust magnitude `G` ∈ {2, 4, 6, 8} m/s:
 
 | Filename pattern | Meaning |
 |---|---|
 | `15AoA45Gusted{G}MS{Lift\|Drag}.jpg` | Base AoA $+15°$, secondary $45°$ orientation, gust $G$ m/s |
 | `15AoA60Gusted{G}MS{Lift\|Drag}.jpg` | Base AoA $+15°$, secondary $60°$ orientation, gust $G$ m/s |
 
-The $\sim$33% lift-drop result reported in Section IV.D of the paper (`fig15_gust_case.png`) is from the 2 m/s case at $\alpha = +15°$.
+The $\sim$33% lift-drop result reported in Section 7.4 of the paper (*Gust-perturbation case*, `fig15_gust_case.png`) is from the 2 m/s case at $\alpha = +15°$.
 
 **Static polar exports** at fixed AoA + varying $V_\infty$:
 
@@ -146,23 +172,7 @@ The wing uses a low-Re S1223 cambered section.
 | `Arm.SLDPRT` | SolidWorks part | Wing/arm 3D solid (used in `fig02_wing_cad*` of the paper) |
 | `Drawing1.dwg` | AutoCAD | Assembly drawing |
 | `Drawing1-Model.pdf` | PDF | Rasterized assembly drawing |
-| `Captur*.JPG`, `Capture*.JPG`, `Capture*.PNG` | screenshots | Renderings used in the paper's wing-geometry figure (panels c–e) |
-
----
-
-
-
----
-
-## License
-
-| Asset | License |
-|---|---|
-| Telemetry CSVs, figures, plots, FEA / CFD result images, airfoil coordinates | Creative Commons Attribution 4.0 (CC-BY-4.0) |
-| Ansys Workbench project files (`*.wbpj`, `*_files.zip`) | © the authors; reuse permitted under CC-BY-4.0 attribution. Note that opening these files requires the user's own valid Ansys licence — no Ansys software is redistributed here. |
-| Paper source (`AIAA.zip`) | © the authors; redistributable per AIAA author rights. |
-
-A `LICENSE` file with the full CC-BY-4.0 text is recommended for the repository root.
+| `Captur*.JPG`, `Capture*.JPG`, `Capture*.PNG` | screenshots | Renderings used in the paper's Wing-geometry figure (panels a–c) |
 
 ---
 
@@ -172,4 +182,23 @@ A `LICENSE` file with the full CC-BY-4.0 text is recommended for the repository 
 - Figures in the paper were produced by the Python scripts in `AIAA.zip` (`build_figures.py`, `build_hero.py`).
 - The Ansys cases require Workbench 2022 R2 or 2023 R1 (or compatible) and an academic or commercial Fluent + Mechanical licence.
 
+---
 
+## License
+
+| Asset | License |
+|---|---|
+| Telemetry CSVs, figures, plots, FEA / CFD result images, airfoil coordinates | Creative Commons Attribution 4.0 (CC-BY-4.0) |
+| Ansys Workbench project files (`*.wbpj`, `*_files.zip`) | © the authors; reuse permitted under CC-BY-4.0 attribution. Note that opening these files requires the user's own valid Ansys licence — no Ansys software is redistributed here. |
+| Paper source bundle (`AIAA.zip`) | © the authors; the journal manuscript is made available under the relevant Elsevier author rights for *Aerospace Science and Technology*. Refer to the journal's policy for permitted redistribution of the accepted manuscript and the version of record. |
+
+A `LICENSE` file with the full CC-BY-4.0 text is recommended at the repository root.
+
+---
+
+## Contact
+
+For questions about the data, the analysis pipeline, or the paper:
+
+**Md Nur-A-Adam Dony** (corresponding author) — `mdony42@tntech.edu`
+Department of Electrical and Computer Engineering, Tennessee Technological University, Cookeville, TN, USA.
