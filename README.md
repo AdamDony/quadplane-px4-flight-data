@@ -3,8 +3,8 @@
 
 
 > **Flight-Test Characterization and Design Implications of Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft**
-> Md Azizul Islam, Anika Tasneem, S. G. M. Hossain, Md Nur-A-Adam Dony
-> AIAA SciTech Forum, 11–15 January 2027, Orlando, Florida. AIAA Paper 2027-XXXX *(submitted)*
+> Md Azizul Islam, S. G. M. Hossain, Md Nur-A-Adam Dony
+
 
 This repository hosts the raw PX4 telemetry, derived CSV topic exports, Ansys Fluent CFD project files, structural FEA results, S1223 airfoil reference data, and the SolidWorks/AutoCAD geometry used in the paper.
 
