@@ -11,6 +11,8 @@ authors:
   - family-names: Dony
     given-names: Md Nur-A-Adam
     email: mdony42@tntech.edu
+  - family-names: Hasan
+    given-names: Mehedi
   - family-names: Hossain
     given-names: S. G. M.
 repository-code: https://github.com/AdamDony/quadplane-px4-flight-data
@@ -33,6 +35,8 @@ preferred-citation:
       given-names: Md Azizul
     - family-names: Dony
       given-names: Md Nur-A-Adam
+    - family-names: Hasan
+      given-names: Mehedi
     - family-names: Hossain
       given-names: S. G. M.
   year: 2026

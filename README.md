@@ -13,8 +13,8 @@ every figure below straight from the raw logs.
 
 > **Flight-Test Characterization and Design Implications of
 > Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft**
-> Md Azizul Islam¹, Md Nur-A-Adam Dony¹\*, S. G. M. Hossain¹
-> ¹ Equal contribution · \* Corresponding author — `mdony42@tntech.edu`
+> Md Azizul Islam, Md Nur-A-Adam Dony\*, Mehedi Hasan, S. G. M. Hossain
+> \* Corresponding author — `mdony42@tntech.edu`
 > Journal manuscript, 2026 (under review)
 
 ![3-D flight path reconstructed from the PX4 local-position estimator](figures/trajectory_3d.png)
@@ -32,11 +32,11 @@ pattern flying, back-transition, and vertical landing.
 | Distance flown | **3.6 km** |
 | Max altitude (AGL) | **69 m** |
 | Cruise indicated airspeed | **≈ 15 m/s** (18.6 m/s peak ground speed) |
-| Power in hover | **≈ 1 230 W** |
-| Power in wing-borne cruise | **≈ 380 W — 3.2× less than hover** |
+| Power in stable hover | **≈ 1 270 W** |
+| Power in wing-borne cruise | **≈ 380 W — 3.4× less than hover** |
 | Energy used | 2 695 mAh (6S Li-Po) |
 
-That 3.2× hover-to-cruise power ratio *is* the quadplane argument, and you can
+That 3.4× hover-to-cruise power ratio *is* the quadplane argument, and you can
 see it in the data:
 
 ![Altitude, speed, battery voltage and power over the flight](figures/flight_overview.png)
