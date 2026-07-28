@@ -158,7 +158,7 @@ the paper (machine-readable metadata in [`CITATION.cff`](CITATION.cff)):
 
 ```bibtex
 @article{IslamDonyHossain2026Quadplane,
-  author  = {Islam, Md Azizul and Dony, Md Nur-A-Adam and Hossain, S. G. M.},
+  author  = {Islam, Md Azizul and Dony, Md Nur-A-Adam and Hasan, Mehedi and Hossain, S. G. M.},
   title   = {{Flight-Test Characterization and Design Implications of
              Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft}},
   year    = {2026},
