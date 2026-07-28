@@ -15,6 +15,7 @@ every figure below straight from the raw logs.
 > Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft**
 > Md Azizul Islam, Md Nur-A-Adam Dony\*, Mehedi Hasan, S. G. M. Hossain
 > \* Corresponding author — `mdony42@tntech.edu`
+> 📄 **[Read the paper (preprint PDF)](docs/preprint.pdf)**
 > Journal manuscript, 2026 (under review)
 
 ![3-D flight path reconstructed from the PX4 local-position estimator](figures/trajectory_3d.png)
