@@ -15,7 +15,7 @@ every figure below straight from the raw logs.
 > Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft**
 > Md Azizul Islam¹, Md Nur-A-Adam Dony¹\*, S. G. M. Hossain¹
 > ¹ Equal contribution · \* Corresponding author — `mdony42@tntech.edu`
-> *Aerospace Science and Technology*, 2026 (under review)
+> Journal manuscript, 2026 (under review)
 
 ![3-D flight path reconstructed from the PX4 local-position estimator](figures/trajectory_3d.png)
 
@@ -161,9 +161,8 @@ the paper (machine-readable metadata in [`CITATION.cff`](CITATION.cff)):
   author  = {Islam, Md Azizul and Dony, Md Nur-A-Adam and Hossain, S. G. M.},
   title   = {{Flight-Test Characterization and Design Implications of
              Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft}},
-  journal = {Aerospace Science and Technology},
   year    = {2026},
-  note    = {Under review}
+  note    = {Journal manuscript under review}
 }
 ```
 

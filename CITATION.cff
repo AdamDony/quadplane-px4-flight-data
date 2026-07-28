@@ -24,7 +24,7 @@ keywords:
   - CFD
   - S1223 airfoil
 preferred-citation:
-  type: article
+  type: unpublished
   title: >-
     Flight-Test Characterization and Design Implications of
     Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft
@@ -35,6 +35,5 @@ preferred-citation:
       given-names: Md Nur-A-Adam
     - family-names: Hossain
       given-names: S. G. M.
-  journal: Aerospace Science and Technology
   year: 2026
-  notes: Under review
+  notes: Journal manuscript under review
