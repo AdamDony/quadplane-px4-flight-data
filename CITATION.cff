@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset or the analysis code, please cite both the
+  repository and the journal paper below.
+title: >-
+  Quadplane VTOL flight-test telemetry, CFD, and structural-analysis dataset
+type: dataset
+authors:
+  - family-names: Islam
+    given-names: Md Azizul
+  - family-names: Dony
+    given-names: Md Nur-A-Adam
+    email: mdony42@tntech.edu
+  - family-names: Hossain
+    given-names: S. G. M.
+repository-code: https://github.com/AdamDony/quadplane-px4-flight-data
+license: CC-BY-4.0
+keywords:
+  - VTOL
+  - quadplane
+  - PX4
+  - flight test
+  - transition
+  - CFD
+  - S1223 airfoil
+preferred-citation:
+  type: article
+  title: >-
+    Flight-Test Characterization and Design Implications of
+    Hover-to-Forward-Flight Transition for a Small Quadplane VTOL Aircraft
+  authors:
+    - family-names: Islam
+      given-names: Md Azizul
+    - family-names: Dony
+      given-names: Md Nur-A-Adam
+    - family-names: Hossain
+      given-names: S. G. M.
+  journal: Aerospace Science and Technology
+  year: 2026
+  notes: Under review
