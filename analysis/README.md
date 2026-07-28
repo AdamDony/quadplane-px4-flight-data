@@ -5,7 +5,8 @@ telemetry CSVs in [`data/telemetry/`](../data/telemetry/).
 
 ```bash
 pip install -r analysis/requirements.txt
-python analysis/plot_flight.py            # run from the repo root
+python analysis/plot_flight.py            # flight figures (run from the repo root)
+python analysis/cfd_polars.py             # CFD polar reduction -> figures/cfd_polars.png
 ```
 
 Output (≈10 s):
@@ -16,6 +17,7 @@ Output (≈10 s):
 | `figures/trajectory_3d.png` | 3-D flight path (local NED), coloured by ground speed |
 | `figures/ground_track.png` | Top-down ground track, coloured by altitude AGL |
 | `figures/transition.png` | Roll/pitch and quad lift-motor PWM through both VTOL transitions |
+| `figures/cfd_polars.png` | Finite-wing C_L/C_D polars and induced-drag fit reduced from `cfd/polars/LiftDrag.xlsx` |
 
 ## Time-base caveat
 

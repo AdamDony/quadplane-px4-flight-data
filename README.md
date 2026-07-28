@@ -118,8 +118,12 @@ Full column-level semantics: **[docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md
   lift/drag time-histories at base α = +15° under 2–8 m/s gusts at 45°/60°
   orientation, plus static cases `{Lift|Drag}0AoA{30…135}Degree8ms.JPG`.
   The ~33 % gust lift-drop result in the paper comes from the 2 m/s case.
-- **`cfd/polars/`** — [`LiftDrag.xlsx`](cfd/polars/LiftDrag.xlsx): the numeric
-  C_L(α), C_D(α) data behind the paper's polar figure, with plot exports.
+- **`cfd/polars/`** — [`LiftDrag.xlsx`](cfd/polars/LiftDrag.xlsx): the raw
+  integrated Fluent forces behind the paper's polar figure, with plot exports.
+  Run `python analysis/cfd_polars.py` to reduce them to finite-wing
+  coefficients for the simulated panel geometry (`cad/WingForSimu.STEP`,
+  0.292 m chord × 1.016 m span, AR 3.48): C_Lα ≈ 2.64/rad, C_D0 ≈ 0.018,
+  Oswald e ≈ 0.77, max L/D ≈ 10.
 - **`cfd/flow-viz/`** — streamlines, velocity vectors, pressure contours,
   particle traces, residual/convergence history, and solver-setup screenshots.
 - **`cfd/projects/`** — Ansys Workbench projects: `GustedWingProjectANSYS.wbpj`
